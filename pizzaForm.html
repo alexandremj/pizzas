@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>&#127829; Pizzas! &#127829;</title>
+</head>
+<body class="bg-warning">
+
+<div class="container bg-light" id="formContainer">
+    <h1 class="text-danger">Avaliação semanal de pizzarias!</h1>
+
+    <div class="row">
+        <script src="pizzaForm.js"></script>
+        <div class="col-md-12">
+            <form name="pizzaForm" onsubmit="return getFormData()" method="POST" style="align-content: center;">
+                <div class="container">
+                    <p class="text-danger">Nome da Pizzaria:</p>
+                    <input type="text" name="place" placeholder="Lugar">
+                </div>
+                <br>
+                <br>
+
+                <div class="container">
+                    <p class="text-danger">Preço:</p>
+                    <input type="text" name="price" placeholder="00,00">
+                </div>
+                <br>
+                <br>
+
+                <div class="container">
+                    <p class="text-danger">Nota:</p>
+                    <input type="radio" name="grade" value="1"> 1
+                    <input type="radio" name="grade" value="2"> 2
+                    <input type="radio" name="grade" value="3"> 3
+                    <input type="radio" name="grade" value="4"> 4
+                    <input type="radio" name="grade" value="5"> 5
+                    <input type="radio" name="grade" value="6"> 6
+                    <input type="radio" name="grade" value="7"> 7
+                    <input type="radio" name="grade" value="8"> 8
+                    <input type="radio" name="grade" value="9"> 9
+                    <input type="radio" name="grade" value="10"> 10
+                </div>
+
+                <br>
+                <br>
+
+                <div class="container">
+                    <p class="text-danger">Mais detalhes:</p>
+                    <div id="details-text-field"><input class="form-control input-lg" type="text" name="details" placeholder="Fale mais sobre como foi a experiência!"><br></div>
+                </div>
+
+                <div class="container">
+                    <input class="btn btn-danger btn-block" type="submit" value="Enviar!">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6"><button class="btn btn-danger btn-block" onclick="getAllPizzaPlaces()">Ver pizzarias já registradas!</button></div>
+            <div class="col-md-6"><button class="btn btn-danger btn-block" onclick="getSpecificPlace()"> Busca por nome!</button></div>
+        </div>
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

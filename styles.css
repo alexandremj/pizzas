@@ -1,0 +1,11 @@
+body {
+    background: url("group-of-pizza.jpg") cyan;
+}
+
+#formContainer {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    opacity: 95%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
